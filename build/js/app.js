@@ -187,7 +187,7 @@ _fnLog:K,_fnMap:F,_fnBindAction:Ya,_fnCallbackReg:z,_fnCallbackFire:s,_fnLengthO
 
 $(document).ready(function() {
 
-	$('.table').dataTable({
+	$('table.table').DataTable({
     paging: false,
     searching: false,
     info: false

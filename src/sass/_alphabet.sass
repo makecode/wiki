@@ -2,6 +2,7 @@
   margin-top: 10px
   display: flex
   flex-direction: row
+  box-sizing: border-box
 
   &__el
     padding-right: 15px
@@ -23,13 +24,17 @@
 
   &.is-vertical
     flex-wrap: wrap
+    justify-content: space-between
 
     .alphabet
 
       &__el
+        padding-right: 0
+        display: inline-block
+        text-align: center
         width: 25px
         height: 25px
-        line-height: 25px
+        line-height: 23px
         background-color: #fff
         border: 1px solid $borderGrey
         transition: all .3s ease-in-out
@@ -40,9 +45,11 @@
           border: 1px solid $textBlue
 
           .alphabet__link
+            text-decoration: none
             color: #fff
 
       &__link
+        display: block
         color: $textBlue
 
 
