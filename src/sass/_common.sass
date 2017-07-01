@@ -7,6 +7,9 @@ $bgGrey: #dbdbdb
 $borderGrey: #ebebeb
 $bgGreyLight: #fafbfc
 $bgGreen: #63d12d
+$btnGreen: #61bc34
+$btnGreenDark: #76c64e
+
 
 +font("opensans-light", opensans-light)
 +font("opensans-regular", opensans-regular)
@@ -34,6 +37,7 @@ h1
 	span
 		font-size: 74px
 		text-transform: uppercase
+		line-height: 1
 		+h600
 
 h2
@@ -102,11 +106,14 @@ body
 .i-upper
 	text-transform: uppercase
 
+.i-semibold
+	+h600
+
 a,
 a:visited,
 a:active,
 a:focus
-	color: $textBlue
+	color: $textBlueDark
 	display: inline-flex
 	text-decoration: none
 	cursor: pointer
@@ -168,12 +175,16 @@ img
 	&__el
 		padding-bottom: 22px
 
-.block
-	margin-bottom: 30px
-	padding: 35px 30px
+.extension
+	display: flex
+	margin-bottom: 26px
+	padding: 35px 30px 30px
 	width: 100%
 	border: 1px solid $borderGrey
 	border-left-width: 10px
+
+	&__left
+		margin-right: 15px
 
 .text
 
@@ -183,6 +194,11 @@ img
 	&__descr
 		margin-bottom: 28px
 
-.rating
-	text-align: right
+.extension-block
 
+	dl
+		display: flex
+		justify-content: flex-end
+
+	dd
+		margin-left: 8px
