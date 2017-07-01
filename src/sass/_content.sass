@@ -1,61 +1,30 @@
 .content
-  padding: 40px 0
+  padding: 30px 0
 
   &__title
     padding-bottom: 3px
     border-bottom: 1px solid $borderGrey
 
-  &.is-inner-mov
-    padding: 8px 0
+  &__top
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid $borderGrey
 
-    .content
+  &__left
+    width: 72%
 
-      &__top
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        align-items: center
-        border-bottom: 1px solid $borderGrey
-
-      &__bottom
-        padding-top: 20px
-        padding-bottom: 100px
-
-      &__left
-        width: 72%
-
-      &__right
-        width: 28%
-
-  &.is-inner-text-file
-
-    .content
-
-      &__left
-        width: 72%
-
-      &__right
-        width: 28%
-
-  &.is-information
-    padding-top: 20px
-    padding-bottom: 100px
-
-    .content
-
-      &__title
-        padding-bottom: 8px
-
+  &__right
+    width: 28%
 
   &__wrap
     display: flex
     flex-direction: row
     width: 100%
 
-  &__left,
-  &__right
-    width: 100%
-    box-sizing: border-box
-
   &__left
     margin-right: 25px
+
+  &.main
+    padding: 40px 0
