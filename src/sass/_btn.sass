@@ -1,0 +1,25 @@
+.btn,
+.btn:focus,
+.btn:visited
+  padding: 0 52px
+  height: 50px
+  line-height: 50px
+  color: $textBlack
+  background-color: $bgGrey
+  font-size: 13px
+  display: inline-flex
+  white-space: nowrap
+  transition: all .3s ease-in-out
+  cursor: pointer
+  +h400
+
+  &:hover
+    text-decoration: none
+
+  &.is-large
+    font-size: 18px
+    +h600
+
+  &.is-green
+    color: #fff
+    background-color: $bgGreen

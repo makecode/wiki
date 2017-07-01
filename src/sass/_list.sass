@@ -1,0 +1,31 @@
+.list
+  display: flex
+  flex-direction: row
+
+  &.is-vertical
+    flex-direction: column
+
+    .list
+
+      &__el
+        position: relative
+        padding-left: 10px
+
+        &:after
+          position: absolute
+          top: 8px
+          left: 0
+          content: ''
+          width: 2px
+          height: 2px
+          background-color: $textBlack
+
+  //&.is-unstyled
+  //
+  //  .list
+  //
+  //    &__el
+  //      padding-left: 0
+  //
+  //      &:after
+  //        display: none

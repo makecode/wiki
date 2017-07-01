@@ -1,0 +1,19 @@
+.nav
+
+  &__list
+    display: flex
+    flex-direction: row
+
+  &__el
+    padding-right: 38px
+
+    &.is-active
+
+      .nav__link
+        color: $textBlue
+
+  &__link,
+  &__link:visited
+    color: $textBlack
+    font-size: 18px
+    +h400

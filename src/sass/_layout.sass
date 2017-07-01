@@ -1,0 +1,56 @@
+.container
+  position: relative
+  margin: 0 auto
+  width: 1060px
+
+.header
+  padding: 17px 0
+
+  &__wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+  &__right
+    display: flex
+    align-items: center
+
+.footer
+  padding-bottom: 35px
+
+  &__top
+    margin-bottom: 7px
+    padding-top: 21px
+    border-top: 1px solid $borderGrey
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  .list
+
+    &__el
+      position: relative
+      padding-right: 21px
+
+      &:after
+        position: absolute
+        content: ''
+        top: 4px
+        right: 11px
+        width: 1px
+        height: 13px
+        background-color: $textBlack
+
+      &:last-child
+        padding-right: 0
+
+        &.list__el
+
+          &:after
+            display: none
+
+
+    &__link
+      color: $textBlack

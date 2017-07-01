@@ -1,0 +1,188 @@
+//variables
+$textBlue: #2992e0
+$textBlueDark: #1b88da
+$textBlueLight: #aae0ff
+$textBlack: #4d5257
+$bgGrey: #dbdbdb
+$borderGrey: #ebebeb
+$bgGreyLight: #fafbfc
+$bgGreen: #63d12d
+
++font("opensans-light", opensans-light)
++font("opensans-regular", opensans-regular)
++font("opensans-semibold", opensans-semibold)
+
+=h300
+	font-family: "opensans-light", Helvetica, Arial, sans-serif
+
+=h400
+	font-family: "opensans-regular", Helvetica, Arial, sans-serif
+
+=h600
+	font-family: "opensans-semibold", Helvetica, Arial, sans-serif
+
+h1
+	font-size: 48px
+	+h600
+
+	&.is-fz-34
+		font-size: 34px
+
+	&.is-light
+		+h300
+
+	span
+		font-size: 74px
+		text-transform: uppercase
+		+h600
+
+h2
+	font-size: 20px
+	+h400
+
+	&.is-fz-28
+		font-size: 28px
+		+h300
+
+h3
+	font-size: 16px
+	+h600
+
+	&.is-fz-18
+		font-size: 18px
+	
+	&.is-fz-20
+		font-size: 20px
+		color: $textBlueDark
+
+body
+	font-family: Arial, sans-serif
+	font-size: 13px
+	color: $textBlack
+	//line-height: 1.4
+	+h400
+	
+// common blocks
+
+.block-information
+	padding-top: 35px
+	padding-bottom: 55px
+	background-color: $bgGreyLight
+	border-bottom: 1px solid $borderGrey
+
+	&__wrap
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+
+.title
+
+	&__link
+		color: $textBlack
+		text-decoration: none
+		text-transform: uppercase
+
+.main-banner
+	padding-top: 45px
+	padding-bottom: 50px
+	background-image: url('../img/main-banner.png')
+
+	&__title
+		color: #fff
+		letter-spacing: -.9px
+
+.subtitle
+	margin-top: 10px
+	margin-bottom: 33px
+	color: #fff
+	font-size: 15px
+	line-height: 22px
+	+h400
+
+.i-upper
+	text-transform: uppercase
+
+a,
+a:visited,
+a:active,
+a:focus
+	color: $textBlue
+	display: inline-flex
+	text-decoration: none
+	cursor: pointer
+	transition: all .3s ease-in-out
+
+	&:hover
+		text-decoration: underline
+
+img
+	display: inline-flex
+	max-width: 100%
+	height: auto
+
+// common blocks
+
+.atoms
+	width: 1060px
+	margin: 10px auto
+
+.atom
+	margin: 10px 0
+	padding: 10px
+	border: 1px solid #2c2c2c
+
+.logo
+
+	&__img
+		width: 200px
+
+.copyright
+
+	&__descr
+		font-size: 12px
+		color: #99a1a8
+
+
+.top-menu
+	padding: 11px 0
+	background-color: #f6f7fa
+	border-bottom: 1px solid #ecedee
+
+.information
+
+	&__title
+		font-size: 20px
+		+h300
+
+		&.is-fz-18
+			font-size: 18px
+			+h600
+
+.items
+	padding: 23px 0
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	flex-wrap: wrap
+
+	&__el
+		padding-bottom: 22px
+
+.block
+	margin-bottom: 30px
+	padding: 35px 30px
+	width: 100%
+	border: 1px solid $borderGrey
+	border-left-width: 10px
+
+.text
+
+	&__title
+		margin-bottom: 20px
+
+	&__descr
+		margin-bottom: 28px
+
+.rating
+	text-align: right
+
