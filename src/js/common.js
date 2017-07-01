@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
-	// go js
+	$('.table').dataTable({
+    paging: false,
+    searching: false,
+    info: false
+  });
 
 });
