@@ -5,15 +5,15 @@
     flex-direction: row
 
   &__el
-    padding-right: 38px
-
-    &.is-active
-
-      .nav__link
-        color: $textBlue
+    margin-right: 38px
 
   &__link,
   &__link:visited
     color: $textBlack
     font-size: 18px
     +h400
+
+    &:hover,
+    &:active
+      color: $textBlue
+      text-decoration: none

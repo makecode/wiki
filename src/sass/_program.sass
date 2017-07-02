@@ -1,15 +1,23 @@
 .program
   display: flex
 
+  &__el
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-bottom: 2px
+
   &__left
+    padding-left: 20px
     margin-right: 50px
     display: flex
     align-items: center
 
   &__img
-    margin-right: 10px
+    margin-right: 18px
     width: 35px
 
   &__link
+    display: inline-block
     color: $textBlueDark
     font-size: 16px
