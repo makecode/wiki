@@ -10,7 +10,6 @@ $bgGreen: #63d12d
 $btnGreen: #61bc34
 $btnGreenDark: #76c64e
 
-
 +font("opensans-light", opensans-light)
 +font("opensans-regular", opensans-regular)
 +font("opensans-semibold", opensans-semibold)
@@ -65,19 +64,32 @@ body
 	color: $textBlack
 	//line-height: 1.4
 	+h400
+
+a
+	color: $textBlueDark
+	display: inline-block
+	text-decoration: none
+	cursor: pointer
+	transition: all .3s ease-in-out
+
+	&:hover,
+	&:visited,
+	&:active,
+	&:focus
+		text-decoration: underline
+
+img
+	display: inline-flex
+	max-width: 100%
+	height: auto
+
+.i-upper
+	text-transform: uppercase
+
+.i-semibold
+	+h600
 	
 // common blocks
-
-.block-information
-	padding-top: 35px
-	padding-bottom: 55px
-	background-color: $bgGreyLight
-	border-bottom: 1px solid $borderGrey
-
-	&__wrap
-		display: flex
-		flex-direction: row
-		justify-content: space-between
 
 .title
 
@@ -89,48 +101,13 @@ body
 .banner
 	margin: 30px 0
 
-.main-banner
-	padding-top: 45px
-	padding-bottom: 50px
-	background-image: url('../img/main-banner.png')
-
-	&__title
-		color: #fff
-		letter-spacing: -.9px
-
 .subtitle
 	margin-top: 10px
-	margin-bottom: 33px
+	margin-bottom: 23px
 	color: #fff
 	font-size: 15px
 	line-height: 22px
 	+h400
-
-.i-upper
-	text-transform: uppercase
-
-.i-semibold
-	+h600
-
-a,
-a:visited,
-a:active,
-a:focus
-	color: $textBlueDark
-	display: inline-flex
-	text-decoration: none
-	cursor: pointer
-	transition: all .3s ease-in-out
-
-	&:hover
-		text-decoration: underline
-
-img
-	display: inline-flex
-	max-width: 100%
-	height: auto
-
-// common blocks
 
 .atoms
 	width: 1060px
@@ -152,7 +129,6 @@ img
 		font-size: 12px
 		color: #99a1a8
 
-
 .top-menu
 	padding: 11px 0
 	background-color: #f6f7fa
@@ -168,27 +144,6 @@ img
 			font-size: 18px
 			+h600
 
-.items
-	padding: 23px 0
-	display: flex
-	flex-direction: row
-	justify-content: space-between
-	flex-wrap: wrap
-
-	&__el
-		padding-bottom: 22px
-
-.extension
-	display: flex
-	margin-bottom: 26px
-	padding: 35px 30px 30px
-	width: 100%
-	border: 1px solid $borderGrey
-	border-left-width: 10px
-
-	&__left
-		margin-right: 15px
-
 .text
 
 	&__title
@@ -197,11 +152,9 @@ img
 	&__descr
 		margin-bottom: 28px
 
-.extension-block
+.programs
 
-	dl
-		display: flex
-		justify-content: flex-end
-
-	dd
-		margin-left: 8px
+	&__el
+		margin-bottom: 10px
+		padding-bottom: 15px
+		border-bottom: 1px solid $borderGrey
