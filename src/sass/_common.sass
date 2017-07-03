@@ -62,7 +62,6 @@ body
 	font-family: Arial, sans-serif
 	font-size: 13px
 	color: $textBlack
-	//line-height: 1.4
 	+h400
 
 a
@@ -72,11 +71,13 @@ a
 	cursor: pointer
 	transition: all .3s ease-in-out
 
-	&:hover,
-	&:visited,
-	&:active,
-	&:focus
+	&:hover
 		text-decoration: underline
+
+	&:active,
+	&:focus,
+	&:visited
+		text-decoration: none
 
 img
 	display: inline-flex
@@ -89,6 +90,11 @@ img
 .i-semibold
 	+h600
 	
+.i-mb-18
+	margin-bottom: 18px
+
+.i-mb-25
+	margin-bottom: 25px
 // common blocks
 
 .title
@@ -103,7 +109,7 @@ img
 
 .subtitle
 	margin-top: 10px
-	margin-bottom: 23px
+	margin-bottom: 33px
 	color: #fff
 	font-size: 15px
 	line-height: 22px
@@ -134,30 +140,18 @@ img
 	background-color: #f6f7fa
 	border-bottom: 1px solid #ecedee
 
-.information
-
-	&__title
-		font-size: 20px
-		+h300
-
-		&.is-fz-18
-			font-size: 18px
-			+h600
-
-.text
-
-	&__title
-		margin-bottom: 15px
-
-	&__descr
-		margin-bottom: 27px
-
-	.list
-		margin-top: 15px
-
 .programs
 
 	&__el
 		margin-bottom: 14px
 		padding-bottom: 12px
+		border-bottom: 1px solid $borderGrey
+
+.aside
+
+	&__title
+		display: block
+		margin-top: 5px
+		padding-bottom: 7px
+		font-size: 20px
 		border-bottom: 1px solid $borderGrey

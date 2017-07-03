@@ -1,16 +1,36 @@
 .table-wrap
-  margin-bottom: 40px
+  margin-bottom: 30px
 
   &__title
     margin-bottom: 10px
     padding-bottom: 10px
     border-bottom: 1px solid $borderGrey
+    display: flex
+    align-items: center
 
-  h3
-    font-size: 20px
-    +h400
+    .title
+      margin-left: 15px
+
+      &__name
+        display: block
+        font-size: 18px
+
+        &.is-fz-20
+          font-size: 20px
+
+      &__subscr
+        color: #90959a
+        font-size: 13px
+
+    span
+      font-size: 20px
+      +h400
 
   .table-small
     td
       text-align: left
       padding-left: 8px
+
+      &:last-child
+        padding-left: 0
+
