@@ -6,4 +6,16 @@ $(document).ready(function() {
     info: false
   });
 
+  $('#how').on("click","a", function (event) {
+    var margin,
+      id  = $(this).attr('href'),
+      top = $(id).offset().top;
+
+      margin = 10;
+
+    event.preventDefault();
+
+    $('body,html').animate({scrollTop: top - margin}, 1000);
+  });
+
 });
