@@ -216,13 +216,11 @@ img { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-in
 .nav__link:hover, .nav__link:active, .nav__link:visited:hover, .nav__link:visited:active { color: #2992e0; text-decoration: none; }
 
 .program { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
-.program__el { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-bottom: 11px; }
+.program__el { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-bottom: 11px; color: #000; font-size: 16px; }
 .program__left { margin-left: 20px; margin-right: 60px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 .program__left img { width: 64px; }
 .program__img { margin-right: 14px; width: 28px; }
-.program__link { display: inline-block; color: #1b88da; font-size: 16px; text-decoration: none; cursor: pointer; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
-.program__link:hover { text-decoration: underline; }
-.program__link:active, .program__link:focus, .program__link:visited { text-decoration: none; }
+.program__link { display: inline-block; color: #1b88da; }
 
 .search { position: relative; width: 300px; }
 .search__form { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
