@@ -218,7 +218,7 @@ img { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-in
 .program { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 .program__el { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-bottom: 11px; color: #4d5257; font-size: 16px; }
 .program__left { margin-left: 20px; margin-right: 60px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
-.program__left img { width: 64px; }
+.program__left img { max-width: 64px; }
 .program__img { margin-right: 14px; width: 32px; }
 .program__name { margin-top: 10px; font-size: 16px; }
 .program__link { display: inline-block; color: #1b88da; }
@@ -279,7 +279,7 @@ img { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-in
 .social__el { margin-right: 7px; }
 .social__el:last-child { margin-right: 0; }
 
-.solution { width: 100%; padding: 30px; margin-bottom: 43px; border: 1px solid #ebebeb; }
+.solution { width: 100%; padding: 27px; margin-bottom: 43px; border: 1px solid #ebebeb; }
 .solution__top { margin-bottom: 20px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 .solution__right { text-align: center; }
 .solution__left { margin-right: 28px; }
@@ -288,23 +288,28 @@ img { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-in
 .solution__counter span { line-height: 1; }
 .solution__counter span:first-child { font-size: 40px; }
 .solution__counter span:last-child { font-size: 26px; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 300; }
-.solution img { margin-left: 5px; }
+.solution img { display: inline-block; margin-left: 10px; }
 
 .spec dl { margin-bottom: 10px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 .spec dt { min-width: 100px; margin-right: 15px; font-size: 18px; text-align: right; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 300; }
 .spec dd { font-size: 18px; }
 
-.table { margin-top: 14px; }
+.table { table-layout: fixed; width: 100%; margin-top: 14px; }
 .table thead { background-color: #f6f7fa; }
 .table th { position: relative; height: 37px; line-height: 37px; font-size: 14px; text-transform: uppercase; text-align: left; cursor: pointer; padding-left: 25px; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 600; }
 .table th::after, .table th::before { position: absolute; content: ""; left: 12px; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width: 0; height: 0; border-style: solid; }
 .table th::after { top: -webkit-calc(50% - 4px); top: calc(50% - 4px); border-width: 0 3px 4px 3px; border-color: transparent transparent #4d5257 transparent; }
 .table th::before { top: -webkit-calc(50% + 4px); top: calc(50% + 4px); border-width: 4px 3px 0 3px; border-color: #4d5257 transparent transparent transparent; }
+.table th:first-child { width: 23%; }
+.table th:nth-child(2) { width: 59%; }
+.table th:last-child { width: 18%; }
 .table th.sorting_desc::after { display: none; }
 .table th.sorting_asc::before { display: none; }
 .table tr:nth-child(even) { background-color: #fafbfc; }
-.table td { height: 30px; line-height: 30px; font-size: 14px; padding-left: 25px; }
-.table td:first-child, .table td:last-child { width: 20%; }
+.table td { height: 30px; line-height: 30px; font-size: 14px; padding-left: 25px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.table td:first-child { width: 23%; }
+.table td:nth-child(2) { width: 59%; }
+.table td:last-child { width: 18%; }
 .table td .rating-value { display: none; }
 
 .table-small { table-layout: fixed; }
