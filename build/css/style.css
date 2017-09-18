@@ -104,7 +104,7 @@ img { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-in
 
 .top-menu { padding: 11px 0; background-color: #f6f7fa; border-bottom: 1px solid #ecedee; }
 
-.programs__el { margin-bottom: 14px; padding-bottom: 7px; border-bottom: 1px solid #ebebeb; }
+.programs__el { margin-bottom: 25px; padding-bottom: 16px; border-bottom: 1px solid #ebebeb; }
 
 .aside__title { display: block; margin-top: 5px; padding-bottom: 7px; font-size: 20px; border-bottom: 1px solid #ebebeb; }
 
@@ -169,8 +169,8 @@ img { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-in
 .download__descr { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-top: 13px; }
 .download__descr span { margin-left: 8px; }
 
-.extension { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; margin-bottom: 26px; padding: 35px 30px 30px; width: 100%; border: 1px solid #ebebeb; border-left-width: 10px; }
-.extension__left { margin-right: 15px; max-width: 100px; }
+.extension { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; margin-bottom: 26px; padding: 30px 30px 25px; width: 100%; border: 1px solid #ebebeb; border-left-width: 10px; }
+.extension__left { margin-right: 15px; max-width: 128px; }
 
 .extension-block dl { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; }
 .extension-block dd { margin-left: 6px; }
@@ -219,7 +219,7 @@ img { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-in
 .program__el { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-bottom: 11px; color: #4d5257; font-size: 16px; }
 .program__left { margin-left: 20px; margin-right: 60px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 .program__left img { width: 64px; }
-.program__img { margin-right: 14px; width: 28px; }
+.program__img { margin-right: 14px; width: 32px; }
 .program__name { margin-top: 10px; font-size: 16px; }
 .program__link { display: inline-block; color: #1b88da; }
 
@@ -290,7 +290,7 @@ img { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-in
 .solution__counter span:last-child { font-size: 26px; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 300; }
 .solution img { margin-left: 5px; }
 
-.spec dl { margin-bottom: 12px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.spec dl { margin-bottom: 10px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
 .spec dt { min-width: 100px; margin-right: 15px; font-size: 18px; text-align: right; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 300; }
 .spec dd { font-size: 18px; }
 
