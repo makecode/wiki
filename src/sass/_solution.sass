@@ -3,17 +3,23 @@
   padding: 27px
   margin-bottom: 43px
   border: 1px solid $borderGrey
+  +r(768)
+    text-align: center
 
   &__top
     margin-bottom: 20px
     display: flex
     justify-content: space-between
+    +r(768)
+      justify-content: center
 
   &__right
     text-align: center
 
   &__left
     margin-right: 28px
+    +r(768)
+      margin-right: 0
 
   &__descr
     margin-bottom: 5px
@@ -22,6 +28,9 @@
 
     &:last-child
       margin-bottom: 0
+
+      +r(768)
+        display: none
 
   &__counter
 
@@ -34,6 +43,9 @@
       &:last-child
         font-size: 26px
         +h300
+
+    +r(768)
+      display: none
 
   img
     display: inline-block

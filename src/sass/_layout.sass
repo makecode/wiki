@@ -2,6 +2,15 @@
   position: relative
   margin: 0 auto
   width: 1060px
+  +r(1200)
+    width: 980px
+
+  +r(1024)
+    width: 760px
+    padding: 0 20px
+
+  +r(768)
+    width: 100%
 
 .main
   flex: 1 1 auto
@@ -13,10 +22,20 @@
     display: flex
     flex-direction: row
     justify-content: space-between
+    +r(768)
+      flex-direction: column
+
+  &__left
+    +r(768)
+      text-align: center
+      margin-bottom: 20px
 
   &__right
     display: flex
     align-items: center
+
+  +r(768)
+    padding: 20px 0
 
 .footer
   padding-bottom: 35px
@@ -28,6 +47,9 @@
     align-items: center
     padding-top: 21px
     border-top: 1px solid $borderGrey
+
+    +r(768)
+      flex-direction: column
 
   .list
     margin-bottom: 15px
